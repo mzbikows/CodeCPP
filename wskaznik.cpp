@@ -17,6 +17,7 @@ using namespace std;
    
    liczba =0x30;
    cout << liczba << " " << *wskaznik << endl;
- 
+	
+   //system("Pause");
    return 0;
  }
