@@ -186,7 +186,5 @@ int main(void)
  //Person p2("DUPA2"); 
  //p1 = p2;
  //cout << p1;
-
- system("pause");
  
 }
