@@ -19,7 +19,7 @@ void obliczodsetki () {
  float procent=0.06, odsetki=0;
   if (kwotalok>20000) procent=0.07;
   odsetki=kwotalok*ildni*procent;
-  cout<<"Imie: "<<imie<<endl<<"Nazwisko: "<<nazwisko<<endl<<"Odsetki: "<<odsetki<<endl<<endl;  }
+  cout<<"Imie: "<<imie<<endl<<"Nazwissssssssssssssssssssko: "<<nazwisko<<endl<<"Odsetki: "<<odsetki<<endl<<endl;  }
   };
 
 int main()
