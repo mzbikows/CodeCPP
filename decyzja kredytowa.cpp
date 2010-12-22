@@ -31,7 +31,7 @@ int param=0;
   if (czykarta=true) param++;
   
   if (param>4)
-  cout<<"Pan "<<nazwisko<<endl<<" otrzymal pozytywna decyzje kredytowa :) "<<endl<<endl;
+  cout<<"Pan "<<nazwisko<<endl<<" otrzymal pozytttttttttttywna decyzje kredytowa :) "<<endl<<endl;
   else 
   cout<<"Pan "<<nazwisko<<endl<<" NIE otrzymal pozytywnej decyzji kredytowej :( "<<endl<<endl;
   };
