@@ -6,7 +6,7 @@ using namespace std;
    int liczba = 80;
    int *wskaznik = &liczba;
    
-   cout << liczba << " jjjj" << &liczba << endl;
+   cout << liczba << " jjjddddddddj" << &liczba << endl;
    cout << wskaznik << " " << *wskaznik << endl;
  
    *wskaznik = 42;
