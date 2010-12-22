@@ -26,7 +26,8 @@ int main()
 { //konstruktor dla danego obiektu wywolujemy tylko raz
 lokata klient1; //wywolujemy tu konstruktor ktory wczesniej byl zdefiniowany bez nawiasow bo nie bylo paramterow
 klient1.obliczodsetki();
-
+//dsfdsfsdf
+//sdfsdfdsf
 lokata klient2("Ada","Skoczynski",20000,2);
 klient2.obliczodsetki();
                    
