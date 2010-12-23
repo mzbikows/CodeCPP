@@ -1,3 +1,4 @@
+//Mariusz Zbikowski
 #include <iostream>
 #include <cstring>
 #include <cstdlib> //free && mallock w cstdlib
