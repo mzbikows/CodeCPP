@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cstring>
 #include <cstdlib> //free && mallock w cstdlib
-
+//las
 using namespace std;
 
 
