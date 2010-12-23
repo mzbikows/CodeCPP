@@ -25,8 +25,8 @@ public:
 		char* glowicaw;
   
 		glowicar = n;
-		cout << "n : " << n << endl;
-		cout << "glowicar : " << glowicar << endl;
+		//cout << "n : " << n << endl;
+		//cout << "glowicar : " << glowicar << endl;
   
 		licznik = 0;
 		while( *glowicar != 0)
@@ -34,12 +34,12 @@ public:
 			++glowicar;
 			++licznik;
 		}
-		cout << "n : " << n << endl;
-		cout << "glowicar : " << glowicar << endl;
+		//cout << "n : " << n << endl;
+		//cout << "glowicar : " << glowicar << endl;
   
 		/* Kopiowanie. */
 		glowicar = n;
-		cout << "aa:" << (int)glowicar << endl;
+		//cout << "aa:" << (int)glowicar << endl;
 		name = (char*)malloc( (licznik + 1)*sizeof(char) );
 		glowicaw = name;
 
@@ -95,7 +95,7 @@ public:
 	
 	~Person()
 	{  
-        //cout << "Desktruktor ~Person" << endl;     
+        cout << "Desktruktor ~Person" << endl;     
 		free(name);
 	};
 };
@@ -132,7 +132,7 @@ public:
 	};
 	~Couple()
 	{
-		//cout << "Desktruktor ~Couple" << endl;   
+		cout << "Desktruktor ~Couple" << endl;   
 		free(husb->name);
 		free(wife->name);
 		
