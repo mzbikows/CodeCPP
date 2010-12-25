@@ -27,7 +27,7 @@ int main()
 lokata klient1; //wywolujemy tu konstruktor ktory wczesniej byl zdefiniowany bez nawiasow bo nie bylo paramterow
 klient1.obliczodsetki();
 
-lokata klient2("Adam","Skoczynski",20000,2);
+lokata klient2("Ada","Skoczynski",20000,2);
 klient2.obliczodsetki();
                    
   system("Pause");
