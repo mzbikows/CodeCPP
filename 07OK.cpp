@@ -17,13 +17,72 @@ public:
 
 	Person(const char* n)
 	{
-		name = (char*) n;
-		cout << "test = " <<(int) name << endl;
+		//name = (char*) n;
+		
+		/* Jak dluga jest tablica? */
+		int licznik, licznik1;
+		const char *glowicar;
+		char* glowicaw;
+  
+		glowicar = n;
+		cout << "n : " << n << endl;
+		cout << "glowicar : " << glowicar << endl;
+  
+		licznik = 0;
+		while( *glowicar != 0)
+		{
+			++glowicar;
+			++licznik;
+		}
+		cout << "n : " << n << endl;
+		cout << "glowicar : " << glowicar << endl;
+  
+		/* Kopiowanie. */
+		glowicar = n;
+		cout << "aa:" << (int)glowicar << endl;
+		name = (char*)malloc( (licznik + 1)*sizeof(char) );
+		glowicaw = name;
+
+		for(licznik1 = 0; licznik1 < licznik + 1; ++licznik1)
+		{
+			*glowicaw = (char)(*glowicar);
+			++glowicaw;
+			++glowicar;
+		}
+		
+		/* Wydruk testowy. */
+		cout << "test : " << (int) name << endl ;
     };
 	Person(const Person& os)
 	{
-		name = os.name;
-		cout << "test2 = " <<(int) name << endl;
+		//name = os.name;
+		
+		/* Jak dluga jest tablica? */
+		int licznik, licznik1;
+		const char* glowicar;
+		char* glowicaw;
+  
+		glowicar = os.name;
+		licznik = 0;
+		while( *glowicar != 0)
+		{
+			++glowicar;
+			++licznik;
+		}	
+  
+		/* Kopiowanie. */
+		glowicar = os.name;
+		name = (char*)malloc( (licznik + 1)*sizeof(char) );
+		glowicaw = name;
+		for(licznik1 = 0; licznik1 < licznik + 1; ++licznik1)
+		{
+			*glowicaw = (char)(*glowicar);
+			++glowicaw;
+			++glowicar;
+		}
+		/* Wydruk testowy. */
+		cout << "test2 : " << (int) name << endl ;
+		
 	};
 
 	Person& operator=(const Person& os)
@@ -88,7 +147,7 @@ int main(void)
     Person person2(person1);
 	
 	cout << person1 << endl;
-	cout << person2 << endl;
+    cout << person2 << endl;
 	
 	Person *person_c1 = new Person("John");
 	Person person_c2("Bert");
